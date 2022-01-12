@@ -77,7 +77,7 @@ function createBook(item) {
 
     removeBtn.textContent = 'Remove';
     removeBtn.setAttribute('id', 'removeBtn');
-    bookDiv.appendChild(removebtn);
+    bookDiv.appendChild(removeBtn);
 
     library.appendChild(bookDiv);
 
