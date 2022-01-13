@@ -11,8 +11,8 @@ closePopUp.addEventListener('click', () => popUpForm.style.display = 'none');
 class Book {
     constructor(title, author, pages, read) {
         this.title = form.title.value;
-        this.author = form.author.value;
-        this.pages = form.pages.value + 'pg';
+        this.author = 'By ' + form.author.value;
+        this.pages = form.pages.value + ' pages';
         this.read = form.read.checked;
     }
 }
