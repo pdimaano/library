@@ -46,15 +46,15 @@ function addBook(i) {
 
   const title = document.getElementById("title").value;
   let titleNode = document.createElement("h2");
-  titleNode.innerHTML = `Title: ${title}`;
+  titleNode.innerHTML = `${title}`;
 
   const author = document.getElementById("author").value;
   let authorNode = document.createElement("h3");
-  authorNode.innerHTML = `Author: ${author}`;
+  authorNode.innerHTML = `By: ${author}`;
 
   const pages = document.getElementById("pages").value;
   let pageNode = document.createElement("h3");
-  pageNode.innerHTML = `Pages: ${pages}`;
+  pageNode.innerHTML = `${pages} pages`;
 
   const read = document.getElementById("read").value;
   let readNode = document.createElement("h3");
@@ -108,15 +108,15 @@ function getBooks() {
 
     const title = document.getElementById("title").value;
     let titleNode = document.createElement("h2");
-    titleNode.innerHTML = `Title: ${book.title}`;
+    titleNode.innerHTML = `${book.title}`;
 
     const author = document.getElementById("author").value;
     let authorNode = document.createElement("h3");
-    authorNode.innerHTML = `Author: ${book.author}`;
+    authorNode.innerHTML = `By: ${book.author}`;
 
     const pages = document.getElementById("pages").value;
     let pageNode = document.createElement("h3");
-    pageNode.innerHTML = `Pages: ${book.pages}`;
+    pageNode.innerHTML = `${book.pages} pages`;
 
     const read = document.getElementById("read").value;
     let readNode = document.createElement("h3");
