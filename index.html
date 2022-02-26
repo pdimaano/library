@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Book Nook</title>
-</head>
-<body>
-<h1>The Book Nook</h1>
-    <div id='newBtn-Container'>
-        <button id='newBtn'>Add New Book</button>
-    </div>
-    <div id='popUp'>
-        <form id='form' action='/script.js'>
-            <span class="close">&times;</span>
-            <legend>New Book</legend>
-            <div id='textInput'>
-                <p><input 
-                    type='text' 
-                    id='title' 
-                    name='title' 
-                    placeholder='Title'
-                    required
-                    maxlength="100"
-                /></p>
-                <p><input 
-                    type='text' 
-                    id='author' 
-                    name='author' 
-                    placeholder='Author'
-                    required
-                    maxlength="100"
-                /></p>
-                <p><input 
-                    type='number' 
-                    id='pages' 
-                    name='pages' 
-                    placeholder='Pages'
-                    required
-                    max="10000"
-                /></p>
-            </div>
-            <div id='checkBox'>
-                <p><label>Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
-            </div>
-            <button type='submit' form='form' id='addBtn'>Add</button>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>The Book Nook</h2>
+    </header>
+    <button id="new-book">+ Add Book</button>
+    <div class="overlay"></div>
+    <div class="bookshelf"></div>
+    <section id="popup">
+      <div id="container">
+        <h1>New Book</h1>
+        <div class="close">+</div>
+        <form id="form" action="/" method="GET">
+          <label for="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Book Title"
+            required
+          /><br />
+          <label for="author">Author:</label>
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Author"
+            required
+          /><br />
+          <label for="pages">Pages:</label>
+          <input
+            type="number"
+            id="pages"
+            name="pages"
+            placeholder="Pages"
+            required
+          /><br />
+          <label for="read">Read the book?</label><br />
+          <select name="read" id="read">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <br />
+          <input type="submit" value="Submit" />
         </form>
-    </div>
-    <div id='Library-container'></div>
-
+      </div>
+    </section>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
