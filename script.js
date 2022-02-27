@@ -21,7 +21,6 @@ class Book {
 function formOpenOrClosed() {
   if (formOpen) {
     formContainer.style.transform = "scale(0)";
-    newBook.style.transform = "rotate(0)";
     form.reset();
     overlay.style.opacity = 0;
     formOpen = false;
